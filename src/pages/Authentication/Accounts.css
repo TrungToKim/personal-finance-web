@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.AccountFrom {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(230, 235, 240, 1);
+}
+
+.AccountBox {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.AccountBox label {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.AccountBox input {
+    width: 100%;
+    padding: 10px 14px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+.AccountBox input:focus {
+    border-color: rgba(59, 130, 246, 0.8);
+}
+
+.AccountBox button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.LoginBtn {
+    background-color: rgba(59, 130, 246, 0.9);
+    color: white;
+}
+
+.AccountBox button:hover {
+    opacity: 0.85;
+}
+
+.AccountLink {
+    padding: 5px;
+}
+
+.AccountLink a {
+    text-decoration: none;
+    color: black;
+}
+
+.AccountLink a:hover {
+    color: blue;
+}

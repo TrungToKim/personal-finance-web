@@ -1,0 +1,299 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.Ct-screen {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color: antiquewhite;
+    border: 0.5px solid black;
+}
+
+.Ct-Budget {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    border: 0.5px solid black;
+}
+
+.Budget-graph {
+    padding: 10px;
+    border: 0.5px solid black;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.Balance-graph {
+    padding: 10px;
+    border: 0.5px solid black;
+}
+
+.Category-graph {
+    padding: 10px;
+    border: 0.5px solid black;
+}
+
+.Ct-Wellets {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    width: 1400px;
+}
+
+.Budget-card {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border: 0.5px solid black;
+    padding: 10px;
+    gap: 5px;
+}
+
+.My-Card {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    border: 0.5px solid black;
+    padding: 10px;
+    gap: 5px;
+}
+
+.Card {
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid black;
+    padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    gap: 5px;
+    height: 350px;
+    color: white;
+    justify-content: space-evenly;
+    background-image: url(/home/gigabyte/Code/FinacerManagerWeb/src/assets/card.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.Card-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 10px;
+}
+
+.Card-top p {
+    padding-left: 5px;
+    font-size: 25px;
+}
+
+.Card-number {
+    padding: 5px;
+    padding-left: 40px;
+}
+
+.Card-number p {
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+.Card-bottom {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 10px;
+}
+
+.Card-bottom p {
+    font-size: 25px;
+    padding-left: 5px;
+}
+
+.Add-Card {
+    border: 0.5px solid black;
+}
+
+.Add-Card button {
+    height: 100%;
+    width: 100%;
+}
+
+.Total {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 10px;
+    border: 0.5px solid black;
+    gap: 5px;
+}
+
+.Total-info {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+}
+
+.Total-Balance {
+    border: 0.5px solid black;
+    padding: 20px;
+}
+
+.Total-Currency {
+    border: 0.5px solid black;
+    padding: 20px;
+}
+
+.Total-status {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+}
+
+.Status,
+.Graph {
+    border: 0.5px solid black;
+    padding: 20px;
+}
+
+.Budget-payment {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border: 0.5px solid black;
+    padding: 10px;
+    gap: 5px;
+}
+
+.Budget-payment ul {
+    height: 100%;
+}
+
+.Budget-payment ul li {
+    list-style: none;
+    padding: 10px;
+    border: 0.5px solid black;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.My-Payment {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 0.5px solid black;
+    padding: 10px;
+    gap: 5px;
+    width: 500px;
+}
+
+.UpPayment {
+    border: 0.5px solid black;
+    padding: 10px;
+}
+
+.Ct-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Ct-functions {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border: 0.5px solid black;
+    padding: 20px;
+    gap: 20px;
+}
+
+.Ct-search {
+    position: relative;
+    padding: 10px;
+    border: 0.5px solid black;
+}
+
+.Ct-search input {
+    padding-left: 50px;
+    font-size: 25px;
+}
+
+.Ct-icon {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    font-size: 1.5em;
+    left: 20px;
+    padding: 5px;
+    transform: translateY(-50%);
+}
+
+.Ct-box {
+    position: relative;
+    font-size: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.Ct-Btn {
+    border: 0.5px solid black;
+    padding: 10px;
+}
+
+.Ct-Btn button {
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.Ct-card {
+    border: 0.5px solid black;
+}
+
+.Ct-table {
+    width: 100%;
+    padding: 15px;
+}
+
+.Ct-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid rgba(24, 22, 21, 0.55);
+}
+
+.Item {
+    width: 15%;
+    padding: 15px;
+    font-size: 12px;
+    border: 0.5px solid black;
+}
+
+.Item:hover {
+    background-color: lightslategray;
+    color: #000;
+}
+
+.Ct-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    border-top: 1px solid rgba(24, 22, 21, 0.55);
+}
+
+.Content {
+    width: 15%;
+    padding: 10px;
+    border: 0.5px solid black;
+}
+
+.Content:hover {
+    background-color: lightslategray;
+    color: #000;
+}
