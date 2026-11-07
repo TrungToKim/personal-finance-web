@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== PAGE WRAPPER ===== */
+.Rp-Al-screen {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f1f5f9;
+    padding: 24px;
+    gap: 20px;
+}
+
+/* ===== REPORT CARD ===== */
+.Rp-screen {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* ===== TOP: TITLE + FILTER ===== */
+.top-screen {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 16px;
+    align-items: center;
+}
+
+.title h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.title p {
+    color: #64748b;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.filter div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.monthly,
+.year {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+    background-color: #ffffff;
+    color: #374151;
+    cursor: pointer;
+    width: 100%;
+    transition: border-color 0.2s ease;
+}
+
+.monthly:focus,
+.year:focus {
+    border-color: #2563eb;
+}
+
+.export {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+    width: 100%;
+}
+
+.export:hover {
+    background-color: #1d4ed8;
+}
+
+/* ===== FINANCIAL SUMMARY CARDS ===== */
+.Cards {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.Cards-titel h1 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.Cards-items {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.items {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 12px;
+    height: 90px;
+    flex: 1;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.items:hover {
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+    border-color: #2563eb;
+}
+
+.items-icon {
+    background-color: #eff6ff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2563eb;
+    font-size: 24px;
+}
+
+.items-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+
+.items-text small,
+.items-text span:first-child {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.items-text strong,
+.items-text span:last-child {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+/* ===== ANALYTICS SECTION ===== */
+.Al-screen {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.Al-screen > h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+/* ===== CHARTS GRID ===== */
+.Al-graph {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.Graph-1 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.Graph-items {
+    background-color: #f8fafc;
+    border-radius: 8px;
+    padding: 16px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* ===== MONTHLY REPORT TABLE ===== */
+.Al-report {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.Al-report > h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.Al-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.Al-type {
+    background-color: #f8fafc;
+}
+
+.Al-items {
+    padding: 12px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.Al-content {
+    border-bottom: 1px solid #e2e8f0;
+    transition: background-color 0.15s ease;
+}
+
+.Al-content:hover {
+    background-color: #f8fafc;
+}
+
+.Al-content:last-child {
+    border-bottom: none;
+}
+
+.items-content {
+    padding: 12px 16px;
+    font-size: 14px;
+    color: #374151;
+    text-align: left;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .top-screen {
+        grid-template-columns: 1fr;
+    }
+    .Al-graph {
+        grid-template-columns: 1fr;
+    }
+    .Cards-items {
+        flex-direction: column;
+    }
+}

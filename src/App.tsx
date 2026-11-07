@@ -1,7 +1,7 @@
 import { Routes, Route, BrowserRouter, Navigate } from 'react-router-dom';
+import Reports from './pages/Reports & Analytics/Report&Analytics';
 import Transactions from './pages/Transactions/Transactions'
 import Categories from "./pages/Category & Budget/Categories&Budget";
-import Reports from './pages/Authentication/Reports'
 import Setting from './pages/Authentication/Setting'
 import MainLayout from './components/MainLayout';
 import Home from './pages/Home/Home';

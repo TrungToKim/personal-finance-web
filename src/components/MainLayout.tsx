@@ -3,7 +3,7 @@ import { NavLink, Outlet } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     faUser, faHouse, faMoneyBillTransfer, faTags, faChartLine, faGear, faMagnifyingGlass,
-    faChevronLeft,
+    faChevronLeft, faBell
 } from '@fortawesome/free-solid-svg-icons'
 
 export default function MainLayout() {
@@ -46,6 +46,7 @@ export default function MainLayout() {
                             <input type="text" className='SearchBox' placeholder='Search...' />
                             <FontAwesomeIcon icon={faMagnifyingGlass} className='icon-search' />
                         </div>
+                        <FontAwesomeIcon icon={faBell} className='icon-bell' />
                         <NavLink to="/accounts"><FontAwesomeIcon icon={faUser} /></NavLink>
                     </div>
                 </div>

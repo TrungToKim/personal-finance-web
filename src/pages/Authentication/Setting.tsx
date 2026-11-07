@@ -1,12 +1,18 @@
-import ReactImg from '/home/gigabyte/Code/FinacerManagerWeb/src/assets/react.svg'
+import ReactImg from '../../assets/react.svg'
+import { useState } from 'react'
 import './Setting.css'
+import ProfileSecurity from '../../components/ProfileSecurity'
+import DataManagement from '../../components/DataManagement'
+import Preferences from '../../components/Preferences'
+
 export default function Setting() {
+    const [actives, SetActives] = useState('profile')
     return (
         <>
             <div className="setting-secreen">
                 <div className="setting-title">
-                    <h2>Setting</h2>
-                    <p>Accounts</p>
+                    <h2>Settings</h2>
+                    <p>Manage your account preferences and security</p>
                 </div>
                 <div className='setting-information'>
                     <div className='setting-left'>
@@ -23,30 +29,30 @@ export default function Setting() {
                             </div>
                         </div>
                         <div className='setting-left-function'>
-                            <div className='profile'>
-                                <button>2</button>
+                            <div className='setting-btn'>
+                                <button
+                                    className={actives === 'profile' ? 'active' : ''}
+                                    onClick={() => SetActives('profile')}
+                                >👤 Profile &amp; Security</button>
                             </div>
-                            <div className='password'>
-                                <button>3</button>
+                            <div className='setting-btn'>
+                                <button
+                                    className={actives === 'prefer' ? 'active' : ''}
+                                    onClick={() => SetActives('prefer')}
+                                >⚙️ Preferences</button>
                             </div>
-                            <div className='store'>
-                                <button>4</button>
+                            <div className='setting-btn'>
+                                <button
+                                    className={actives === 'data' ? 'active' : ''}
+                                    onClick={() => SetActives('data')}
+                                >📊 Data Management</button>
                             </div>
                         </div>
                     </div>
-                    <div className='setting-right'>
-                        <div className='setting-avata'>
-                            1
-                        </div>
-                        <div className='setting-profile'>
-                            2
-                        </div>
-                        <div className='setting-password'>
-                            3
-                        </div>
-                        <div className='setting-store'>
-                            4
-                        </div>
+                    <div className='setting-content'>
+                        {actives === 'profile' && <ProfileSecurity />}
+                        {actives === 'prefer' && <Preferences />}
+                        {actives === 'data' && <DataManagement />}
                     </div>
                 </div>
             </div>
